@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>TÌM HIỂU VỀ CSS</h1>
+        <h2>CSS là gì ?</h2>
+        <div class="content">
+          <p>
+            CSS là ngôn ngữ tạo phong cách cho trang web – Cascading Style Sheet
+            language. Nó dùng để tạo phong cách và định kiểu cho những yếu tố
+            được viết dưới dạng ngôn ngữ đánh dấu, như là HTML. Nó có thể điều
+            khiển định dạng của nhiều trang web cùng lúc để tiết kiệm công sức
+            cho người viết web. Nó phân biệt cách hiển thị của trang web với nội
+            dung chính của trang bằng cách điều khiển bố cục, màu sắc, và font
+            chữ.
+          </p>
+          <img src="imgs/CSS img.jpg" alt="" />
+        </div>
+      </div>
+      <div class="box">
+        <h2>Vì sao cần sử dụng CSS trong thiết kế web ?</h2>
+        <p>
+          CSS được sử dụng để trang trí cho các trang web của bạn, bao gồm thiết
+          kế, bố cục và các biến thể hiển thị cho các thiết bị và kích thước màn
+          hình khác nhau.
+        </p>
+        <div class="box__child">
+          <div class="box__child-content">
+            <h3>Trang web không sử dụng CSS</h3>
+            <img src="imgs/no css.png" alt="" />
+          </div>
+          <div class="box__child-content">
+            <h3>Trang web sử dụng CSS</h3>
+            <img src="imgs/Untitled.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Cách áp dụng CSS vào tài liệu</h2>
+        <div class="box__child flex-col">
+          <div class="box__child-content">
+            <h3>
+              1.<b>Inline: </b>mã CSS viết tại thuốc tính <i>style</i> của phần
+              tử HTML
+            </h3>
+            <img src="imgs/inline css.png" alt="" />
+          </div>
+          <div class="box__child-content">
+            <h3>
+              2.<b>Internal: </b>mã CSS trong chính văn bản HTML, nằm trong khối
+              thẻ style
+            </h3>
+            <img src="imgs/head.jpg" alt="" />
+          </div>
+          <div class="box__child-content">
+            <h3>
+              3.<b>External: </b>mã CSS ở một file riêng biệt sau đó nạp vào
+              HTML bằng phần tử link
+            </h3>
+            <img src="imgs/Inkedexternal_LI.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <h2>Cú pháp trong CSS</h2>
+        <ul class="cuphap">
+          <li>
+            <h4>1. Cú pháp cơ bản</h4>
+            <img src="imgs/selector.png" alt="" />
+            <p>
+              <b>Selector</b>: đối tượng sẽ được áp dụng: VD: body, h2, h2, img,
+              .username, #title…
+            </p>
+            <p>
+              <b>Property</b>: các thuộc tính quy định cách trình bày: VD:
+              background-color, font-family, color, padding,..
+            </p>
+            <p>
+              <b>Value</b>: giá trị của thuộc tính: VD: #FFF định màu trắng cho
+              nền trang.
+            </p>
+          </li>
+          <li>
+            <h4>2. Chú thích trong CSS</h4>
+            <p>
+              Chú thích (comment) sẽ được trình duyệt bỏ qua và không hiển thị
+              trên trang web. Sử dụng cấu trúc <code>/*.........*/</code> ở trên
+              1 dòng hoặc nhiều dòng để chú thích. VD:
+
+              <code>/* Style for image */</code>
+              <p>Ngoài ra để viết chú thích nhanh hơn, bạn hãy gõ đoạn text bạn cần chú thích, sau đó bôi đen và sử dụng cú pháp <code>Ctrl + /</code> để tạo chú thích.</p>
+            </p>
+          </li>
+          <li>
+            <h4>3. Đơn vị CSS:</h4>
+            <i>Đơn vị chiều dài</i>
+            <ul class="donvi">
+              <li>
+              %: phần trăm, là đơn vị tham chiếu tỉ lệ so với một phần tử mẹ dựa vào kích thước
+
+              </li>
+              <li>
+              in: inch (1 inch = 2,54 cm)
+
+              </li>
+              <li>
+              em: 1em tương đương với kích thước font chữ hiện hành, nếu font hiện hành có kích thước 14px thì 1em = 14px
+
+              </li>
+              <li>
+                ex: 1ex bằng chiều cao của chữ x hiện hành
+
+              </li>
+              <li>
+              pt: Point (1pt = 1/72 inch)
+
+              </li>
+              <li>
+                pc: Pica (1pc = 12pt)
+
+              </li>
+              <li>
+              px: Pixel (điểm ảnh trên màn hình máy tính)
+
+              </li>
+              <li>
+              cm: định nghĩa đơn vị đo bằng cm
+
+              </li>
+              <li>
+              mm: định nghĩa đơn vị đo bằng mm
+
+              </li>
+              <li>
+              vh: 1% chiều cao của khung nhìn
+
+              </li>
+              <li>
+              vw: 1% chiều rộng của khung nhìn
+
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>
+              4. Sự ưu tiên về vị trí đặt CSS
+            </h4>
+            <p><code>CSS Nội tuyến > CSS bên trong > CSS bên ngoài > CSS mặc định của trình duyệt</code></p>
+            <img src="imgs/muc do uu tien.png" alt="" style="width: 100%;">
+            <p>Thay đổi độ ưu tiên cho thuộc tính CSS:</p>
+            <p><code>selector {property: value !important}</code></p>
+            <p>Nếu cùng một thuộc tính cho một code, nếu cả 2 đều có <code>!important</code> thì cái sau được lấy.</p>
+          </li>
+          <li>
+            <h4>5. Background</h4>
+            <ul class="bg-color">
+              <li>
+                <p><code>5.1. Màu nền</code>: (background-color)</p>
+                <p><code>background-color: red;</code></p>
+                <img src="imgs/bgcolor.png" alt="" style="width: 100%;">
+              </li>
+              <li>
+                <p><code>5.2 Ảnh nền:</code>  (background-image)</p>
+                <img src="imgs/bgimg.png" alt="">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>6. Font chữ </h4>
+            <ul class="font">
+              <li>
+                <p><code>6.1 Font-family</code></p>
+                <p>Định nghĩa danh sách ưu tiên các font sẽ được dùng để hiện thị lên trang web</p>
+                <p>body {font-family: “Roboto”, sans-serif;}</p>
+                <img src="imgs/font.png" alt="" width="100%">
+              </li>
+              <li>
+                  <p>6.2. Font-style</p>
+                  <p>Định nghĩa việc áp dụng các kiểu in thường, in nghiêng, hay in xiên cho chữ.</p>
+                  <p><code>h1 {font-style: italic;}
+                    /* (normal, oblique) */</code></p>
+              </li>
+              <li>
+                  <p>6.3. Font-variant</p>
+                  <p>Được dùng để chọn chế độ bình thường và chế small-caps (chữ in hoa có kích cỡ nhỏ hơn chữ in hoa bình thường) của một font chữ.</p>
+                  <p><code>h1 {font-variant: small-caps;}
+                </code></p>
+              </li>
+              <li>
+                  <p>6.4. Font-weight</p>
+                  <p>Được dùng để chọn chế độ bình thường hay in đậm
+                      <p><code>h1 {font-weight: bold;}</code></p>
+                </p>
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>7. Text</h4>
+            <ul>
+                <li>
+                    <p>7.1 Màu chữ (color)</p>
+                    <p>Để định màu chữ cho một thành phần nào đó trên trang web
+                  </p>
+                    <p><code>body {color: #FFF}</code></p>
+                </li>
+                <li>
+                    <p><h4>7.2. Text-indent</h4></p>
+                    <p>Tạo khoảng thụt đầu dòng cho dòng đầu tiên của văn bản
+                  </p>
+                    <p>
+                      <code>p {text-indent: 30px}</code>
+                    </p>
+                </li>
+                <li>
+                    <p><h4>7.3. Text-align</h4></p>
+                    <p>
+                      Canh chỉnh văn bản cho các thành phần trong trang web. Có 4 giá trị: left (canh trái), right (canh phải), center (canh giữa), justify (canh đều).
+
+                    </p>
+                    <p>
+                      <code>p {text-align: justify}</code>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <h4>7.4. Letter-spacing</h4>
+                    </p>
+                    <p>Dùng để chỉnh khoảng cách giữa các ký tự trong một văn bản.</p>
+                    <p>
+                        <code>
+                          h1 {letter-spacing: 5px}
+                        </code>
+                    </p>
+                </li>
+                <li>
+                    <p><h4>7.5. Text-decoration</h4></p>
+                    <p>
+                      Quy định chế độ in hoa hay in thường của văn bản mà không phụ thuộc vào văn bản gốc trên HTML. Có 4 giá trị: uppercase (in hoa), lowercase (in thường), capitalize (in hoa ký tự đầu tiên trong mỗi từ) và none (không áp dụng hiệu ứng).
+                    </p>
+                    <p>
+                        <code>h1 {text-transform: uppercase}</code>
+                    </p>
+                </li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
